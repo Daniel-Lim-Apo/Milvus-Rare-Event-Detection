@@ -26,7 +26,7 @@ schema = CollectionSchema(fields, description="Text embeddings collection")
 collection = Collection(name="text_embeddings", schema=schema)
 
 # Load the text file
-lines = load_text_file('data.txt')
+lines = load_text_file('kids_activities.txt')
 
 # Load the model
 model = SentenceTransformer('all-MiniLM-L6-v2')
